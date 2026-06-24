@@ -15,8 +15,8 @@ const config: Config = {
         "ink": "#0a0a0a",
         "slate-ink": "#111827",
         "muted": "#6b7280",
-        "accent": "#2563eb",
-        "accent-light": "#3b82f6",
+        "accent": "#0a0a0a",
+        "accent-light": "#1f2937",
         "surface": "#f9fafb",
         "card": "#ffffff",
       },
@@ -30,8 +30,8 @@ const config: Config = {
           "50%": { transform: "translateY(8px)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 0 0 rgba(37,99,235,0.4)" },
-          "50%": { boxShadow: "0 0 0 12px rgba(37,99,235,0)" },
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(10,10,10,0.4)" },
+          "50%": { boxShadow: "0 0 0 12px rgba(10,10,10,0)" },
         },
       },
       animation: {

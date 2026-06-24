@@ -8,27 +8,27 @@ const contactCards = [
     id: "contact-email",
     icon: Mail,
     platform: "Email",
-    handle: "fadil@example.com",
-    href: "mailto:fadil@example.com",
-    gradient: "from-blue-500 to-cyan-400",
+    handle: "fadilj0704@gmail.com",
+    href: "mailto:fadilj0704@gmail.com",
+    iconBg: "bg-accent",
     description: "Reach out directly",
   },
   {
     id: "contact-github",
     icon: Github,
     platform: "GitHub",
-    handle: "github.com/fadil",
-    href: "https://github.com/fadil",
-    gradient: "from-gray-800 to-gray-600",
+    handle: "github.com/fadiljee",
+    href: "https://github.com/fadiljee",
+    iconBg: "bg-ink",
     description: "Check my code",
   },
   {
     id: "contact-linkedin",
     icon: Linkedin,
     platform: "LinkedIn",
-    handle: "linkedin.com/in/fadil",
-    href: "https://linkedin.com/in/fadil",
-    gradient: "from-blue-600 to-blue-400",
+    handle: "linkedin.com/in/fadiljulianto",
+    href: "https://linkedin.com/in/fadiljulianto",
+    iconBg: "bg-slate-ink",
     description: "Let's connect",
   },
 ];
@@ -73,23 +73,21 @@ export default function ContactSection() {
               }`}
               style={{ transitionDelay: `${200 + i * 100}ms` }}
             >
-              {/* Hover gradient backdrop */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
-              />
+              {/* Hover tint */}
+              <div className="absolute inset-0 bg-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Icon */}
               <div
-                className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${card.gradient} flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                className={`relative w-14 h-14 rounded-2xl ${card.iconBg} flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300`}
               >
                 <card.icon size={24} className="text-white" />
               </div>
 
-              <p className="text-xs font-bold uppercase tracking-widest text-muted mb-1">
+              <p className="relative text-xs font-bold uppercase tracking-widest text-muted mb-1">
                 {card.description}
               </p>
-              <h3 className="text-lg font-extrabold text-ink mb-2">{card.platform}</h3>
-              <p className="text-sm text-muted/80 break-all">{card.handle}</p>
+              <h3 className="relative text-lg font-extrabold text-ink mb-2">{card.platform}</h3>
+              <p className="relative text-sm text-muted/80 break-all">{card.handle}</p>
 
               {/* Arrow icon */}
               <ArrowUpRight

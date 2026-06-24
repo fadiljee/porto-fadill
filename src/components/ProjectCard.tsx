@@ -9,7 +9,7 @@ export type Project = {
   description: string;
   longDescription: string;
   tech: string[];
-  gradient: string;
+  accentColor: string;
   githubUrl: string;
   demoUrl: string;
 };
@@ -38,14 +38,14 @@ export default function ProjectCard({ project, index, isInView }: ProjectCardPro
         {project.number}
       </span>
 
-      {/* Top gradient accent bar */}
-      <div className={`h-1 w-full bg-gradient-to-r ${project.gradient}`} />
+      {/* Top solid accent bar */}
+      <div className={`h-1 w-full ${project.accentColor}`} />
 
       <div className="relative z-10 p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-8">
         {/* Left: Text content */}
         <div className="flex-1 space-y-4">
           {/* Number badge */}
-          <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r ${project.gradient} text-white shadow-sm`}>
+          <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${project.accentColor} text-white`}>
             Project {project.number}
           </span>
 
@@ -92,7 +92,7 @@ export default function ProjectCard({ project, index, isInView }: ProjectCardPro
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r ${project.gradient} text-white text-sm font-semibold transition-all duration-200 hover:scale-105 shadow-md`}
+              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full ${project.accentColor} text-white text-sm font-semibold transition-all duration-200 hover:scale-105 hover:opacity-90`}
             >
               <ExternalLink size={15} />
               Live Demo

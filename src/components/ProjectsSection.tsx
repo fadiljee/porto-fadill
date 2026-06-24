@@ -12,7 +12,7 @@ const projects: Project[] = [
     longDescription:
       "An interactive, gamified mobile application designed to make mathematics fun and engaging for students. Features level progression, real-time scoring, leaderboards, and adaptive difficulty powered by Firebase.",
     tech: ["Flutter", "Dart", "Firebase", "Firestore"],
-    gradient: "from-blue-500 to-cyan-400",
+    accentColor: "bg-accent",
     githubUrl: "https://github.com/fadil/game-edukasi-matematika",
     demoUrl: "#",
   },
@@ -24,7 +24,7 @@ const projects: Project[] = [
     longDescription:
       "A comprehensive mobile administration system for managing employee presence and attendance categories. Features offline-first architecture with SQLite sync, role-based access control, and detailed reporting dashboards.",
     tech: ["Flutter", "SQLite", "Dart", "REST API"],
-    gradient: "from-violet-500 to-purple-400",
+    accentColor: "bg-slate-ink",
     githubUrl: "https://github.com/fadil/smart-attendance",
     demoUrl: "#",
   },
@@ -36,7 +36,7 @@ const projects: Project[] = [
     longDescription:
       "A real-time hand gesture recognition system using computer vision. Accurately detects and counts fingers, interprets gestures, and can be extended for sign language interpretation or touchless UI control.",
     tech: ["Python", "OpenCV", "MediaPipe", "NumPy"],
-    gradient: "from-emerald-500 to-teal-400",
+    accentColor: "bg-ink",
     githubUrl: "https://github.com/fadil/hand-tracking",
     demoUrl: "#",
   },
@@ -48,7 +48,7 @@ const projects: Project[] = [
     longDescription:
       "An end-to-end IoT solution for automated plant irrigation. The ESP8266 microcontroller reads soil moisture sensors and triggers water pumps, with real-time monitoring via a Flutter mobile app connected through a Laravel REST backend.",
     tech: ["ESP8266", "Laravel", "Flutter", "MQTT", "MySQL"],
-    gradient: "from-orange-500 to-rose-400",
+    accentColor: "bg-muted",
     githubUrl: "https://github.com/fadil/smart-irrigation",
     demoUrl: "#",
   },

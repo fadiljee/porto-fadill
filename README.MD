@@ -23,37 +23,42 @@
 
 ## 🖥️ Live Demo
 
-> **[fadil.dev](https://fadil.dev)** *(update this link once deployed)*
+> **[fadil.dev](https://fadil.dev)** _(update this link once deployed)_
 
 ---
 
 ## 📸 Sections
 
-| # | Section | Description |
-|---|---------|-------------|
-| 00 | **Hero** | Intro with typewriter, particle background, and CTA buttons |
-| 01 | **About** | Bio, stats (3+ years, 15+ projects), and profile image |
-| 02 | **Skills** | Tech stack organized by category: Frontend, Backend, Mobile, Tools |
-| 03 | **Projects** | Featured projects with tech tags, descriptions, and GitHub links |
-| 04 | **Contact** | Contact form and social links |
+| #   | Section      | Description                                                        |
+| --- | ------------ | ------------------------------------------------------------------ |
+| 00  | **Hero**     | Intro with typewriter, particle background, and CTA buttons        |
+| 01  | **About**    | Bio, stats (3+ years, 15+ projects), and profile image             |
+| 02  | **Skills**   | Tech stack organized by category: Frontend, Backend, Mobile, Tools |
+| 03  | **Projects** | Featured projects with tech tags, descriptions, and GitHub links   |
+| 04  | **Contact**  | Contact form and social links                                      |
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 `HTML/CSS` `JavaScript` `TypeScript` `React 18` `Next.js 14` `Tailwind CSS`
 
 ### Animations & UI
+
 `Framer Motion` `tsParticles` `Lucide React` `Custom Typewriter`
 
 ### Mobile (Projects)
+
 `Flutter` `Dart` `Firebase` `SQLite` `GetX` `BLoC`
 
 ### Backend (Projects)
+
 `Laravel` `PHP` `MySQL` `REST API` `Node.js` `Firebase`
 
 ### Tools & Others
+
 `Git & GitHub` `Figma` `VS Code` `Linux / Kali` `Python` `OpenCV`
 
 ---
@@ -83,12 +88,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start local development server |
-| `npm run build` | Build the production bundle |
-| `npm run start` | Run the production server |
-| `npm run lint` | Run ESLint checks |
+| Script          | Description                    |
+| --------------- | ------------------------------ |
+| `npm run dev`   | Start local development server |
+| `npm run build` | Build the production bundle    |
+| `npm run start` | Run the production server      |
+| `npm run lint`  | Run ESLint checks              |
 
 ---
 
@@ -129,11 +134,11 @@ porto/
 
 Custom Tailwind tokens defined in `tailwind.config.ts`:
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `ink` | `#0A0A0F` | Primary text |
-| `muted` | `#6B7280` | Secondary text |
-| `accent` | `#2563EB` | Brand blue |
+| Token     | Value     | Usage               |
+| --------- | --------- | ------------------- |
+| `ink`     | `#0A0A0F` | Primary text        |
+| `muted`   | `#6B7280` | Secondary text      |
+| `accent`  | `#2563EB` | Brand blue          |
 | `surface` | `#F8F9FA` | Section backgrounds |
 
 Utility classes like `.btn-primary`, `.btn-secondary`, `.gradient-text`, `.section-heading`, and `.skill-chip` are defined in `globals.css` for consistent styling across components.
@@ -143,18 +148,22 @@ Utility classes like `.btn-primary`, `.btn-secondary`, `.gradient-text`, `.secti
 ## 📂 Featured Projects
 
 ### 🎮 Game Edukasi Matematika
+
 Gamified mobile learning app to make math fun for students.
 **Stack:** Flutter · Dart · Firebase · Firestore
 
 ### 📋 Smart Attendance App
+
 Offline-first employee attendance & admin management system.
 **Stack:** Flutter · SQLite · Dart · REST API
 
 ### 👁️ Computer Vision Hand Tracking
+
 Real-time gesture recognition using hand landmark detection.
 **Stack:** Python · OpenCV · MediaPipe · NumPy
 
 ### 🌱 Smart Irrigation System
+
 End-to-end IoT solution for automated plant watering with mobile monitoring.
 **Stack:** ESP8266 · Laravel · Flutter · MQTT · MySQL
 
@@ -162,7 +171,7 @@ End-to-end IoT solution for automated plant watering with mobile monitoring.
 
 ## 📬 Contact
 
-- **Email:** fadil@example.com
+- **Email:** fadilj0704@gmail.com
 - **GitHub:** [@fadil](https://github.com/fadil)
 - **LinkedIn:** [linkedin.com/in/fadil](https://linkedin.com/in/fadil)
 

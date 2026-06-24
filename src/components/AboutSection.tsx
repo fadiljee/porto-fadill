@@ -67,7 +67,7 @@ export default function AboutSection() {
                   }`}
                   style={{ transitionDelay: `${400 + i * 100}ms` }}
                 >
-                  <Icon size={18} className="text-accent mb-2" />
+                  <Icon size={18} className="text-ink mb-2" />
                   <span className="text-2xl font-extrabold text-ink">{value}</span>
                   <span className="text-xs text-muted mt-0.5">{label}</span>
                 </div>
@@ -83,14 +83,14 @@ export default function AboutSection() {
             style={{ transitionDelay: "250ms" }}
           >
             <div className="relative group">
-              {/* Accent background shape */}
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-accent via-blue-400 to-indigo-600 opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-500" />
+              {/* Neutral background shape */}
+              <div className="absolute -inset-4 rounded-full bg-ink opacity-5 blur-2xl group-hover:opacity-10 transition-opacity duration-500" />
 
               {/* Card container */}
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl transform transition-transform duration-500 group-hover:-translate-y-2 group-hover:scale-105">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-indigo-600/20 z-10" />
+                <div className="absolute inset-0 bg-ink/5 group-hover:bg-transparent z-10 transition-colors duration-500" />
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/fadil.jpeg"
                   alt="Fadil — Full-Stack Developer"
                   fill
                   className="object-cover object-center"

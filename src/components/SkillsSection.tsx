@@ -8,12 +8,12 @@ import {
   Globe,
 } from "lucide-react";
 
-type Skill = { name: string; color?: string };
+type Skill = { name: string };
 type Category = {
   id: string;
   icon: React.ElementType;
   title: string;
-  gradient: string;
+  iconBg: string;
   skills: Skill[];
 };
 
@@ -22,7 +22,7 @@ const categories: Category[] = [
     id: "skills-frontend",
     icon: Globe,
     title: "Frontend",
-    gradient: "from-blue-500 to-cyan-400",
+    iconBg: "bg-accent",
     skills: [
       { name: "HTML / CSS" },
       { name: "JavaScript" },
@@ -36,7 +36,7 @@ const categories: Category[] = [
     id: "skills-backend",
     icon: Server,
     title: "Backend",
-    gradient: "from-violet-500 to-purple-400",
+    iconBg: "bg-slate-ink",
     skills: [
       { name: "Laravel" },
       { name: "PHP" },
@@ -50,7 +50,7 @@ const categories: Category[] = [
     id: "skills-mobile",
     icon: Smartphone,
     title: "Mobile",
-    gradient: "from-emerald-500 to-teal-400",
+    iconBg: "bg-ink",
     skills: [
       { name: "Flutter" },
       { name: "Dart" },
@@ -64,7 +64,7 @@ const categories: Category[] = [
     id: "skills-tools",
     icon: Wrench,
     title: "Tools & Others",
-    gradient: "from-orange-500 to-rose-400",
+    iconBg: "bg-muted",
     skills: [
       { name: "Git & GitHub" },
       { name: "VS Code" },
@@ -113,22 +113,20 @@ export default function SkillsSection() {
               }`}
               style={{ transitionDelay: `${200 + i * 100}ms` }}
             >
-              {/* Gradient glow on hover */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${cat.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
-              />
+              {/* Hover tint on card */}
+              <div className="absolute inset-0 bg-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Icon */}
               <div
-                className={`w-11 h-11 rounded-xl bg-gradient-to-br ${cat.gradient} flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform duration-300`}
+                className={`relative w-11 h-11 rounded-xl ${cat.iconBg} flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300`}
               >
                 <cat.icon size={20} className="text-white" />
               </div>
 
-              <h3 className="text-base font-bold text-ink mb-4">{cat.title}</h3>
+              <h3 className="relative text-base font-bold text-ink mb-4">{cat.title}</h3>
 
               {/* Skill chips */}
-              <div className="flex flex-wrap gap-2">
+              <div className="relative flex flex-wrap gap-2">
                 {cat.skills.map((skill) => (
                   <span key={skill.name} className="skill-chip">
                     {skill.name}

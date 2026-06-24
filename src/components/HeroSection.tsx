@@ -15,19 +15,19 @@ const socialLinks = [
   {
     id: "hero-github",
     icon: Github,
-    href: "https://github.com/fadil",
+    href: "https://github.com/fadiljee",
     label: "GitHub",
   },
   {
     id: "hero-linkedin",
     icon: Linkedin,
-    href: "https://linkedin.com/in/fadil",
+    href: "https://linkedin.com/in/fadiljulianto",
     label: "LinkedIn",
   },
   {
     id: "hero-email",
     icon: Mail,
-    href: "mailto:fadil@example.com",
+    href: "mailto:fadilj0704@gmail.com",
     label: "Email",
   },
 ];
@@ -54,19 +54,19 @@ export default function HeroSection() {
       {/* Constellation background */}
       <ParticleBackground />
 
-      {/* Subtle radial gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-radial from-blue-50/40 via-transparent to-transparent pointer-events-none z-[1]" />
+      {/* Subtle radial overlay */}
+      <div className="absolute inset-0 bg-gradient-radial from-gray-50/40 via-transparent to-transparent pointer-events-none z-[1]" />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center flex flex-col items-center">
         {/* Badge */}
         <div
-          className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/8 border border-accent/20 text-accent text-xs font-semibold tracking-widest uppercase mb-8 transition-all duration-700 transform ${
+          className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ink/5 border border-ink/10 text-ink text-xs font-semibold tracking-widest uppercase mb-8 transition-all duration-700 transform ${
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
           }`}
           style={{ transitionDelay: "200ms" }}
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+          <span className="w-1.5 h-1.5 rounded-full bg-ink animate-pulse" />
           Available for Work
         </div>
 

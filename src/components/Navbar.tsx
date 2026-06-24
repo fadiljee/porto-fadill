@@ -71,7 +71,7 @@ export default function Navbar() {
             onClick={() => handleNavClick("#home")}
             className="text-xl font-extrabold text-ink tracking-tight hover:opacity-70 transition-opacity"
           >
-            fadil<span className="text-accent">.</span>
+            Fadil Julianto<span className="text-accent">.</span>
           </button>
 
           {/* Desktop links */}
@@ -103,7 +103,7 @@ export default function Navbar() {
 
           {/* CTA — desktop */}
           <a
-            href="mailto:fadil@example.com"
+            href="mailto:fadilj0704@gmail.com"
             id="nav-cta"
             className="hidden md:inline-flex btn-primary text-xs px-5 py-2.5"
           >
@@ -148,7 +148,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="mailto:fadil@example.com"
+              href="mailto:fadilj0704@gmail.com"
               id="nav-mobile-cta"
               className="btn-primary w-full justify-center mt-2"
             >

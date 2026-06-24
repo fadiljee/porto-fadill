@@ -7,7 +7,7 @@
 /* ── Base ── */
 :root {
   --color-ink: #0a0a0a;
-  --color-accent: #2563eb;
+  --color-accent: #0a0a0a;
 }
 
 * {
@@ -41,7 +41,7 @@ body {
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: #4b5563;
 }
 
 /* ── Section numbers ── */
@@ -55,12 +55,9 @@ body {
   pointer-events: none;
 }
 
-/* ── Gradient text ── */
+/* ── Accent text ── */
 .gradient-text {
-  background: linear-gradient(135deg, #0a0a0a 0%, #2563eb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #0a0a0a;
 }
 
 /* ── Glassmorphism ── */
